@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    display: flex;
+}
+
+aside {
+    /* border: 2px solid violet; */
+    width: 15%;
+    height: 45vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+section {
+    /* border: 2px solid green; */
+    width: 70%;
+}
+
+aside #menu-list {
+    display: none;
+}
+
+aside nav {
+    /* border: 2px solid cadetblue; */
+    padding: 0px 0px 0px 15px;
+}
+
+aside nav ul li {
+    list-style: none;
+    margin: 5px 0px;
+    text-align: center;
+}
+
+aside nav ul li a {
+    text-decoration: none;
+}
+
+aside #profile-img img {
+    width: 10vw;
+    border-radius: 100%;
+    display: block;
+    /* border: 2px solid purple; */
+    margin: 0px auto;
+}
+
+section #form-container {
+    /* border: 2px solid black; */
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+    background-color: #35424a;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+/* Form styling */
+#form-container {
+    height: 100%;
+    width: 80%;
+    margin: 50px auto;
+    padding: 50px;
+    /* border: 2px solid red; */
+}
+
+.user-infor,
+.location-infor {
+    margin: 10px;
+    /* border: 2px solid red; */
+    overflow: hidden;
+}
+
+.input-container {
+    width: 15rem;
+    float: left;
+    /* border: 2px solid red; */
+    margin: 5px;
+}
+
+
+.form-contents-container .heading h3 {
+    color: #fff;
+    text-align: center;
+}
+
+.form-contents-container button {
+    background: blueviolet;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    width: 5rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    float: right;
+    color: white;
+}
+
+.form-contents-container button:hover {
+    background-color: #6be26b;
+}
+
+.form-contents-container .input-container label {
+    margin: 0px 0px 10px 0px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.input-container input,
+select {
+    outline: none;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.input-container input {
+    color: #fff;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    /* border-color: blueviolet; */
+    background-color: rgba(143, 143, 143, 0.212);
+}
+
+.user-infor .heading {
+    display: flex;
+}
+
+.user-infor .heading div {
+    font-weight: 900;
+    /* width: 10rem; */
+    margin: 0px 0px 0px 15vw;
+}
+
+.user-infor .heading div a {
+    text-decoration: none;
+}
+
+.user-infor .heading div a:hover {
+    color: #fff;
+}
+
+#farm-size {
+    display: flex;
+}
+
+#farm-size input {
+    width: 4rem;
+    border-radius: 0px;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    main aside,
+    section {
+        width: 100%;
+        position: relative;
+    }
+
+    main aside {
+        height: auto;
+        overflow: auto;
+    }
+
+    aside #menu-list {
+        float: right;
+        cursor: pointer;
+        /* display: block; */
+        width: 40px;
+        background-color: #fff;
+    }
+
+    aside nav {
+        position: absolute;
+        right: 2px;
+        top: 3vh;
+        /* float: right; */
+        /* border: 2px solid rebeccapurple; */
+        /* height: 0px; */
+        overflow: hidden;
+        clear: left;
+    }
+
+    aside nav ul {
+        float: right;
+    }
+
+    aside nav ul li {
+        float: left;
+    }
+
+    aside #menu-list:hover aside nav {
+        height: auto;
+    }
+
+    aside #profile-img>img {
+        float: left;
+        width: 15vw;
+        border-radius: 100%;
+        display: inline;
+        border: 2px solid purple;
+    }
+
+    section #form-container {
+        height: auto;
+    }
+}

@@ -1,0 +1,220 @@
+.dark {
+    width: 30vw;
+    margin: 200px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.dark h3 {
+    text-align: center;
+}
+
+form .input-control {
+    margin: 10px;
+    padding: 2px;
+}
+
+.input-control input {
+    width: 100%;
+    outline: none;
+    height: 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+form button {
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    background: transparent;
+    border: 1px solid #fff;
+    font-size: 1rem;
+    color: #fff;
+    transition: .3s;
+}
+
+form button:hover {
+    background: #f44336;
+    transition: 1s;
+}
+
+.form-container {
+    height: 100%;
+    width: 80%;
+    margin: 50px auto;
+    /* border: 2px solid red; */
+}
+
+.main-title {
+    height: auto;
+}
+
+.main-title p {
+    font-size: 30px;
+    font-weight: 400;
+    color: blueviolet;
+}
+
+.form-contents-container .heading h3 {
+    color: rgb(164, 88, 235);
+}
+
+.form-contents-container button {
+    background: blueviolet;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    width: 5rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    float: right;
+    color: white;
+}
+
+.form-contents-container button:hover {
+    background-color: #6be26b;
+}
+
+.input-container {
+    width: 15rem;
+    margin: 5px auto;
+}
+
+.form-contents-container .input-container label {
+    margin: 0px 0px 10px 0px;
+    color: rgb(130, 54, 131);
+    font-weight: 900;
+}
+
+.input-container input,
+select {
+    outline: none;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.input-container input,
+select {
+    width: 100%;
+
+
+}
+
+.input-container input:hover {
+    border: 2px solid #6be26b;
+}
+
+.input-container select:hover {
+    border: 2px solid #6be26b;
+
+}
+
+.user-infor .heading {
+    display: flex;
+}
+
+.user-infor .heading div {
+    font-weight: 900;
+    /* width: 10rem; */
+    margin: 0px 0px 0px 15vw;
+}
+
+.user-infor .heading div a {
+    text-decoration: none;
+}
+
+.user-infor .heading div a:hover {
+    color: #6be26b;
+}
+
+.user-infor,
+.farm-infor,
+.location-infor {
+    margin: 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .form-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        padding: 0 20% 0 20%;
+        background: url("farmer-removebg-preview.png");
+        background-repeat: no-repeat;
+        background-position: 6rem 15rem;
+        background-size: 30rem;
+        margin: 0 0;
+        /* border: 2px solid darkred; */
+    }
+
+    .main-title {
+        position: absolute;
+        top: 1rem;
+        left: 5rem;
+        /* border: 2px solid yellow; */
+        max-width: 30rem;
+        height: auto;
+    }
+
+    .main-title p {
+        font-size: 90px;
+        font-weight: bolder;
+
+    }
+
+    .form-contents-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        /* border: 2px solid green; */
+        width: 40rem;
+        float: right;
+        margin: 4rem 0 4rem 0;
+    }
+
+    .input-container {
+        width: 17rem;
+        margin: 5px;
+        float: left;
+    }
+
+    .form-contents-container .input-control label {
+        margin: 0px 0px 10px 0px;
+        /* color: rgb(130, 54, 131);*/
+        font-weight: 900;
+    }
+
+    .input-container input,
+    select {
+        height: 2rem;
+    }
+
+    #reg-btn {
+        /* border: 2px solid yellowgreen; */
+        padding: 0 4rem 0 0;
+    }
+
+    /* #farm-size select,input{
+            display: inline-block;
+        } */
+    #farm-size input {
+        width: 5rem;
+    }
+
+    #farm-size select {
+        width: 11rem;
+    }
+
+    #reg-btn {
+        margin-top: 0px;
+    }
+
+    .form-contents-container button {
+        width: 9rem;
+        font-size: 18px;
+    }
+}

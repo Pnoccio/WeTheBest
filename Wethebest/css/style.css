@@ -1,0 +1,311 @@
+body {
+  font: 13px/1.5 Montserat;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* Global */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* .container_1 h3 p{
+  color: #fff;
+} */
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.button_1 {
+  height: 38px;
+  background: #e8491d;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+
+.dark {
+  padding: 15px;
+  background: #35424a;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Header **/
+header {
+  background: #ffffff;
+  padding: 10px;
+  min-height: 10px;
+  border-bottom: #e8491d 3px solid;
+  /* border:1px solid green; */
+}
+
+header a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header nav ul li {
+  float: left;
+  display: inline;
+  padding: 0 20px 10px 20px;
+}
+
+header #branding {
+  /* border:1px solid green; */
+  display: inline-block;
+}
+
+header #branding img {
+  margin: 0;
+  width: 40vw;
+  height: 15vh;
+  /* position: relative; */
+}
+
+header nav {
+  float: right;
+  /* margin-top:10px; */
+  /* display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center; */
+}
+
+
+header .highlight,
+header .current a {
+  color: #e8491d;
+  font-weight: bold;
+}
+
+header .not-login:hover {
+  color: #ccc;
+  font-weight: bold;
+}
+
+header nav ul #login-regist {
+  color: red;
+  text-decoration: none;
+  border-radius: 5px;
+  /* padding: 4px 3px; */
+}
+
+header nav ul #login-regist a:hover {
+  color: #e8491d;
+}
+
+header nav ul #login-regist #divider {
+  content: " ";
+  margin: 0px 3px;
+  border: 2px solid black;
+  border-radius: 50rem;
+}
+
+/* Logout button in header  */
+header nav ul li form #logout-btn {
+  outline: none;
+  border: none;
+  color: #ffff;
+  background-color: rgb(49, 49, 49);
+  border-radius: 4px;
+  width: auto;
+  height: 3vh;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form #logout-btn:hover {
+  background-color: #e8491d;
+}
+
+/* Showcase */
+#showcase {
+  min-height: 400px;
+  background: url('../img/smil-child-1.jpg') no-repeat;
+  background-position: 100%;
+  background-size: 100%;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+}
+
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding: 30px;
+}
+
+#showcase p {
+  font-size: 15px;
+}
+
+/* Newsletter */
+#newsletter {
+  padding: 15px;
+  color: #ffffff;
+  background: #35424a;
+}
+
+/* #newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+} */
+
+.register-btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 11px 15px;
+  text-align: center;
+  border: none;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: .3s;
+
+}
+
+.register-btn:hover {
+  background: #f44336;
+  transition: 1s;
+}
+
+/* Boxes */
+#boxes {
+  margin-top: 20px;
+}
+
+#boxes .box {
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+#boxes .box img {
+  width: 90px;
+}
+
+/* Sidebar */
+aside#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+  width: 90%;
+  padding: 5px;
+}
+
+/* Main-col */
+article#main-col {
+  float: left;
+  width: 65%;
+}
+
+/* Services */
+ul#services li {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #e6e6e6;
+}
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #e8491d;
+  text-align: center;
+}
+
+.social {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.social li {
+  margin: 0 10px;
+}
+
+.social a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.social a i {
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+
+.social a:hover i {
+  color: aquamarine;
+}
+
+/* Media Queries */
+@media(max-width: 768px) {
+
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  #showcase h1 {
+    margin-top: 40px;
+  }
+
+  #newsletter button,
+  .quote button {
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter form input[type="email"],
+  .quote input,
+  .quote textarea {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
